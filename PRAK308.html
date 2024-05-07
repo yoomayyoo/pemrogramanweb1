@@ -1,0 +1,146 @@
+<html>
+<head>
+    <title>Form Pendaftaran Kursus</title>
+    <style>
+        body {
+            background-color: lightblue;
+            color: red;
+            font-family: Arial, sans-serif;
+        }
+        h1 {
+            text-align: center;
+            font-family: Calibri, sans-serif;
+            font-size: 24px;
+            font-weight: bold;
+            color: red;
+        }
+        h2 {
+            font-family: Calibri, sans-serif;
+            font-size: 20px;
+            font-weight: bold;
+            color: black;
+        }
+        .form-container {
+            background-color: lightgray; 
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            color: black; 
+        }
+        .schedule-container {
+            background-color: #d3d3d3;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+        .comment-container {
+            background-color: red;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .btn-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .btn {
+            background-color: white;
+            color: black;
+            padding: 10px 20px;
+            border-radius: 5px;
+            border: 2px solid black;
+            cursor: pointer;
+            margin-right: 10px;
+        }
+        .btn:hover {
+            background-color: black;
+            color: white;
+        }
+        input[type="text"],
+        input[type="email"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 8px;
+            margin: 5px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+            font-family: "Times New Roman", serif;
+            font-size: 12px;
+            color: black;
+        }
+        .comment-container textarea {
+            background-color: white;
+        }
+        select[name="hari_jam"] {
+            width: calc(100% - 16px); 
+            padding: 8px;
+            margin: 5px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+            font-family: "Times New Roman", serif;
+            font-size: 12px;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Pendaftaran Kursus</h1>
+    <div class="form-container">
+        <h2>Data Diri</h2>
+        <form>
+            <label for="nama">Nama:</label>
+            <input type="text" id="nama" name="nama" required><br><br>
+
+            <label for="nim">NIM:</label>
+            <input type="text" id="nim" name="nim" required><br><br>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="tgl_lahir">Tanggal Lahir:</label>
+            <input type="date" id="tgl_lahir" name="tgl_lahir" required><br><br>
+
+            <label>Jenis Kelamin:</label><br>
+            <input type="radio" id="laki" name="jenis_kelamin" value="laki">
+            <label for="laki">Laki-laki</label>
+			<br>
+            <input type="radio" id="perempuan" name="jenis_kelamin" value="perempuan">
+            <label for="perempuan">Perempuan</label><br><br>
+
+            <label>Pilihan Program Kursus:</label><br>
+            <input type="checkbox" id="csharp" name="kursus[]" value="C#">
+            <label for="csharp">C#</label><br>
+            <input type="checkbox" id="java" name="kursus[]" value="Java">
+            <label for="java">Java</label><br>
+            <input type="checkbox" id="sql" name="kursus[]" value="SQL">
+            <label for="sql">SQL</label><br>
+            <input type="checkbox" id="html" name="kursus[]" value="HTML">
+            <label for="html">HTML</label><br>
+            <input type="checkbox" id="php" name="kursus[]" value="PHP">
+            <label for="php">PHP</label><br><br>
+
+            <label for="hari_jam">Pilihan Hari/Jam Kursus:</label><br>
+            <select id="hari_jam" name="hari_jam" required>
+                <option value="senin_0900">Senin / 09.00-11.00</option>
+                <option value="selasa_0900">Selasa / 09.00-11.00</option>
+                <option value="rabu_0900">Rabu / 09.00-11.00</option>
+            </select><br><br>
+        </form>
+    </div>
+
+    <div class="comment-container">
+        <h2>Komentar Anda</h2>
+        <form>
+            <textarea id="komentar" name="komentar" rows="4" cols="50"></textarea><br><br>
+        </form>
+    </div>
+
+    <div class="btn-container">
+        <input type="reset" class="btn" value="Reset">
+        <input type="submit" class="btn" value="Submit">
+        <input type="button" class="btn" value="Cancel">
+    </div>
+</body>
+</html>
