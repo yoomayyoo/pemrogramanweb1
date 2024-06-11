@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JPhotography</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Times New Roman', sans-serif;
+        }
+        .navbar {
+            margin-bottom: 30px;
+        }
+        .jumbotron {
+            background-color: white;
+            text-align: center;
+            font-family: 'Franklin Gothic Heavy', sans-serif;
+        }
+        .jumbotron h1, .jumbotron p {
+            margin: 0;
+        }
+        .portfolio {
+            margin-top: 30px;
+        }
+        .portfolio img {
+            width: 100%;
+            height: auto;
+        }
+        .footer {
+            text-align: center;
+            padding: 20px;
+            margin-top: 20px;
+            background-color: #f8f9fa;
+        }
+        .filter-buttons {
+            margin-bottom: 20px;
+        }
+        .filterDiv {
+            display: none; 
+        }
+        .show {
+            display: block !important; 
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="NailaHanifah_2310817220016.html">JPhotography</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="NailaHanifah_2310817220016.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About Me</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="jumbotron">
+        <h1>Hi, Hello... I am JohnDas...!</h1>
+        <p>I Travel Around The World To Get The Best Photos.!</p>
+        <p>AWARD WINNING PHOTOGRAPHER / CINEMATOGRAPHER / WRITER</p>
+    </div>
+
+    <div class="container text-center">
+        <div class="btn-group filter-buttons" role="group" aria-label="Portfolio Filter">
+            <button type="button" class="btn btn-secondary" onclick="filterSelection('all')">All</button>
+            <button type="button" class="btn btn-secondary" onclick="filterSelection('landscape')">Landscape</button>
+            <button type="button" class="btn btn-secondary" onclick="filterSelection('portrait')">Portrait</button>
+            <button type="button" class="btn btn-secondary" onclick="filterSelection('product')">Product</button>
+        </div>
+    </div>
+
+    <div class="container portfolio">
+        <div class="row">
+            <div class="col-md-3 filterDiv landscape">
+                <img src="https://i.pinimg.com/736x/c7/c8/33/c7c8336f01a88f997b8505f711ee1516.jpg" alt="Landscape Image 1">
+            </div>
+            <div class="col-md-3 filterDiv portrait">
+                <img src="https://i.pinimg.com/1200x/47/ff/b4/47ffb4e8e2cbdbebf16616703fd1ab85.jpg" alt="Portrait Image 1">
+            </div>
+            <div class="col-md-3 filterDiv product">
+                <img src="https://i.pinimg.com/736x/ee/68/58/ee68581b8a16ee4e9f681e3be485d60b.jpg" alt="Product Image 1">
+            </div>
+            <div class="col-md-3 filterDiv landscape">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpZfhvl2cUmdyaiwdyqDxBEznbEvxruOwTW3zawI3UzeCdT5kK7b7yD5KR2uwEb2n5E1U&usqp=CAU" alt="Landscape Image 2">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3 filterDiv portrait">
+                <img src="https://i.pinimg.com/736x/90/06/86/900686a3f6d8820985328e42a572e5ee.jpg" alt="Portrait Image 2">
+            </div>
+            <div class="col-md-3 filterDiv product">
+                <img src="https://i.pinimg.com/736x/21/de/7c/21de7c3ddb46e65a8539037b8f3e7681.jpg" alt="Product Image 2">
+            </div>
+            <div class="col-md-3 filterDiv landscape">
+                <img src="https://i.pinimg.com/736x/ae/9b/0b/ae9b0bb008c8067b5aa6a08ce0f95ad0.jpg" alt="Landscape Image 3">
+            </div>
+            <div class="col-md-3 filterDiv portrait">
+                <img src="https://i.pinimg.com/474x/66/29/1f/66291f2a87603074d5019b56136bd398.jpg" alt="Portrait Image 3">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3 filterDiv product">
+                <img src="https://i.etsystatic.com/28040156/r/il/e38594/3336841909/il_fullxfull.3336841909_pop4.jpg" alt="Product Image 3">
+            </div>
+            <div class="col-md-3 filterDiv landscape">
+                <img src="https://i.pinimg.com/736x/8e/f6/42/8ef642b002f51a319242f7cd9f1e4007.jpg" alt="Landscape Image 4">
+            </div>
+            <div class="col-md-3 filterDiv portrait">
+                <img src="https://i.pinimg.com/736x/68/77/11/687711d465e3419f4798079781e43b0b.jpg" alt="Portrait Image 4">
+            </div>
+            <div class="col-md-3 filterDiv product">
+                <img src="https://i.pinimg.com/736x/75/e9/df/75e9df5fdd8884990d9c328fcde70071.jpg" alt="Product Image 4">
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>JPhotography</p>
+        <p>&copy; Copyright 2019. All Rights Reserved.</p>
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-dribbble"></i></a>
+            <a href="#"><i class="fab fa-behance"></i></a>
+            <a href="https://www.instagram.com/ceryneyoon?igsh=MTl0N295NDZrdDg2OQ=="><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-snapchat"></i></a>
+            <a href="#"><i class="fab fa-flickr"></i></a>
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://x.com/miuhanv?t=plgZQ31bir7wmrmcTzHyPA&s=09"><i class="fab fa-twitter"></i></a>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script>
+        filterSelection("all");
+
+        function filterSelection(category) {
+            var x, i;
+            x = document.getElementsByClassName("filterDiv");
+            if (category == "all") category = "";
+            for (i = 0; i < x.length; i++) {
+                w3RemoveClass(x[i], "show");
+                if (x[i].className.indexOf(category) > -1) w3AddClass(x[i], "show");
+            }
+        }
+
+        function w3AddClass(element, name) {
+            var i, arr1, arr2;
+            arr1 = element.className.split(" ");
+            arr2 = name.split(" ");
+            for (i = 0; i < arr2.length; i++) {
+                if (arr1.indexOf(arr2[i]) == -1) {
+                    element.className += " " + arr2[i];
+                }
+            }
+        }
+
+        function w3RemoveClass(element, name) {
+            var i, arr1, arr2;
+            arr1 = element.className.split(" ");
+            arr2 = name.split(" ");
+            for (i = 0; i < arr2.length; i++) {
+                while (arr1.indexOf(arr2[i]) > -1) {
+                    arr1.splice(arr1.indexOf(arr2[i]), 1);
+                }
+            }
+            element.className = arr1.join(" ");
+        }
+    </script>
+</body>
+</html>
